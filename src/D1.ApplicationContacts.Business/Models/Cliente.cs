@@ -14,5 +14,10 @@ namespace D1.ApplicationContacts.Business.Models
         public RedeSocial RedeSocial { get; set; }
         public string Cpf { get; set; }
         public string Rg { get; set; }
+
+        /* Relações */
+        public IEnumerable<Endereco> Enderecos { get; set; }
+        public IEnumerable<Telefone> Telefones { get; set; }
+        public IEnumerable<RedeSocial> RedesSociais { get; set; }
     }
 }
